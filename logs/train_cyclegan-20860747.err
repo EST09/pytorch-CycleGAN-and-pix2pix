@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/well/rittscher/users/qdv200/MPN/MPN/main_SSD.py", line 86, in <module>
+    main()
+  File "/well/rittscher/users/qdv200/MPN/MPN/main_SSD.py", line 64, in main
+    deploy_aida.deploy(wsi_path=args.wsi_path,
+  File "/gpfs2/well/rittscher/users/qdv200/MPN/MPN/Detection/deploy_aida.py", line 282, in deploy
+    assert os.path.exists(trained_model), trained_model + ' does not exist!!!'
+AssertionError: Detection/weights/ssd300_10400.pth does not exist!!!

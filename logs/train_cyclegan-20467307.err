@@ -1,0 +1,9 @@
+/well/rittscher/users/qdv200/conda/skylake/envs/pytorch-CycleGAN-and-pix2pix/lib/python3.8/site-packages/torch/cuda/__init__.py:104: UserWarning: 
+NVIDIA A100-PCIE-80GB with CUDA capability sm_80 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_61 sm_70 sm_75 compute_37.
+If you want to use the NVIDIA A100-PCIE-80GB GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  warnings.warn(incompatible_device_warn.format(device_name, capability, " ".join(arch_list), device_name))
+/well/rittscher/users/qdv200/conda/skylake/envs/pytorch-CycleGAN-and-pix2pix/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/var/spool/slurmd/job20467307/slurm_script: line 55: 31374 Aborted                 python train.py --dataroot /well/rittscher/users/qdv200/MPN/GAN_tiles/ihc2he --name ihc2he --model cycle_gan --gpu_ids 0,1 --batch_size 64 --display_id -1

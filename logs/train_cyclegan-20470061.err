@@ -1,0 +1,21 @@
+/well/rittscher/users/qdv200/conda/skylake/envs/pytorch-CycleGAN-and-pix2pix_a100/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:139: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+Traceback (most recent call last):
+  File "/well/rittscher/users/qdv200/conda/skylake/envs/pytorch-CycleGAN-and-pix2pix_a100/lib/python3.8/site-packages/torch/serialization.py", line 441, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol)
+  File "/well/rittscher/users/qdv200/conda/skylake/envs/pytorch-CycleGAN-and-pix2pix_a100/lib/python3.8/site-packages/torch/serialization.py", line 668, in _save
+    zip_file.write_record(name, storage.data_ptr(), num_bytes)
+RuntimeError: [enforce fail at inline_container.cc:471] . PytorchStreamWriter failed writing file data/22: file write failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "train.py", line 75, in <module>
+    model.save_networks(epoch)
+  File "/gpfs3/users/rittscher/qdv200/pytorch-CycleGAN-and-pix2pix/models/base_model.py", line 157, in save_networks
+    torch.save(net.module.cpu().state_dict(), save_path)
+  File "/well/rittscher/users/qdv200/conda/skylake/envs/pytorch-CycleGAN-and-pix2pix_a100/lib/python3.8/site-packages/torch/serialization.py", line 442, in save
+    return
+  File "/well/rittscher/users/qdv200/conda/skylake/envs/pytorch-CycleGAN-and-pix2pix_a100/lib/python3.8/site-packages/torch/serialization.py", line 291, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:337] . unexpected pos 14505856 vs 14505744

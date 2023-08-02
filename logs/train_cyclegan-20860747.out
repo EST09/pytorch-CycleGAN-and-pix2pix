@@ -1,0 +1,28 @@
+------------------------------------------------
+Slurm Job ID: 20860747
+Run on host: compg010.hpc.in.bmrc.ox.ac.uk
+Operating system: Linux
+Username: qdv200
+Started at: Mon Jun 26 16:53:38 BST 2023
+Current directory (ckeck: SBATCH --chdir or -D argument):/gpfs3/users/rittscher/qdv200/pytorch-CycleGAN-and-pix2pix
+------------------------------------------------
+GPU type: 
+no change     /well/rittscher/users/qdv200/anaconda3/condabin/conda
+no change     /well/rittscher/users/qdv200/anaconda3/bin/conda
+no change     /well/rittscher/users/qdv200/anaconda3/bin/conda-env
+no change     /well/rittscher/users/qdv200/anaconda3/bin/activate
+no change     /well/rittscher/users/qdv200/anaconda3/bin/deactivate
+no change     /well/rittscher/users/qdv200/anaconda3/etc/profile.d/conda.sh
+no change     /well/rittscher/users/qdv200/anaconda3/etc/fish/conf.d/conda.fish
+no change     /well/rittscher/users/qdv200/anaconda3/shell/condabin/Conda.psm1
+no change     /well/rittscher/users/qdv200/anaconda3/shell/condabin/conda-hook.ps1
+no change     /well/rittscher/users/qdv200/anaconda3/lib/python3.10/site-packages/xontrib/conda.xsh
+no change     /well/rittscher/users/qdv200/anaconda3/etc/profile.d/conda.csh
+no change     /users/rittscher/qdv200/.bashrc
+No action taken.
+Running find_tiles_for_rois.py for ouh_batch1_20x
+Detect megas
+building multibox
+bulding ssd
+
+Job 20860747 has been completed!

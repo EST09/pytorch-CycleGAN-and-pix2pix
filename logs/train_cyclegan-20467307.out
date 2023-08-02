@@ -1,0 +1,102 @@
+------------------------------------------------
+Slurm Job ID: 20467307
+Run on host: compg035.hpc.in.bmrc.ox.ac.uk
+Operating system: Linux
+Username: qdv200
+Started at: Sun Jun 18 19:23:11 BST 2023
+Current directory (ckeck: SBATCH --chdir or -D argument):/gpfs3/users/rittscher/qdv200/pytorch-CycleGAN-and-pix2pix
+------------------------------------------------
+GPU type: 
+no change     /well/rittscher/users/qdv200/anaconda3/condabin/conda
+no change     /well/rittscher/users/qdv200/anaconda3/bin/conda
+no change     /well/rittscher/users/qdv200/anaconda3/bin/conda-env
+no change     /well/rittscher/users/qdv200/anaconda3/bin/activate
+no change     /well/rittscher/users/qdv200/anaconda3/bin/deactivate
+no change     /well/rittscher/users/qdv200/anaconda3/etc/profile.d/conda.sh
+no change     /well/rittscher/users/qdv200/anaconda3/etc/fish/conf.d/conda.fish
+no change     /well/rittscher/users/qdv200/anaconda3/shell/condabin/Conda.psm1
+no change     /well/rittscher/users/qdv200/anaconda3/shell/condabin/conda-hook.ps1
+no change     /well/rittscher/users/qdv200/anaconda3/lib/python3.10/site-packages/xontrib/conda.xsh
+no change     /well/rittscher/users/qdv200/anaconda3/etc/profile.d/conda.csh
+no change     /users/rittscher/qdv200/.bashrc
+No action taken.
+Running find_tiles_for_rois.py for ouh_batch1_20x
+----------------- Options ---------------
+               batch_size: 64                            	[default: 1]
+                    beta1: 0.5                           
+          checkpoints_dir: ./checkpoints                 
+           continue_train: False                         
+                crop_size: 256                           
+                 dataroot: /well/rittscher/users/qdv200/MPN/GAN_tiles/ihc2he	[default: None]
+             dataset_mode: unaligned                     
+                direction: AtoB                          
+              display_env: main                          
+             display_freq: 400                           
+               display_id: -1                            	[default: 1]
+            display_ncols: 4                             
+             display_port: 8097                          
+           display_server: http://localhost              
+          display_winsize: 256                           
+                    epoch: latest                        
+              epoch_count: 1                             
+                 gan_mode: lsgan                         
+                  gpu_ids: 0,1                           	[default: 0]
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: True                          	[default: None]
+                 lambda_A: 10.0                          
+                 lambda_B: 10.0                          
+          lambda_identity: 0.5                           
+                load_iter: 0                             	[default: 0]
+                load_size: 286                           
+                       lr: 0.0002                        
+           lr_decay_iters: 50                            
+                lr_policy: linear                        
+         max_dataset_size: inf                           
+                    model: cycle_gan                     
+                 n_epochs: 100                           
+           n_epochs_decay: 100                           
+               n_layers_D: 3                             
+                     name: ihc2he                        	[default: experiment_name]
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: resnet_9blocks                
+                      ngf: 64                            
+               no_dropout: True                          
+                  no_flip: False                         
+                  no_html: False                         
+                     norm: instance                      
+              num_threads: 4                             
+                output_nc: 3                             
+                    phase: train                         
+                pool_size: 50                            
+               preprocess: resize_and_crop               
+               print_freq: 100                           
+             save_by_iter: False                         
+          save_epoch_freq: 5                             
+         save_latest_freq: 5000                          
+           serial_batches: False                         
+                   suffix:                               
+         update_html_freq: 1000                          
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
+dataset [UnalignedDataset] was created
+The number of training images = 43288
+initialize network with normal
+initialize network with normal
+initialize network with normal
+initialize network with normal
+model [CycleGANModel] was created
+---------- Networks initialized -------------
+[Network G_A] Total number of parameters : 11.378 M
+[Network G_B] Total number of parameters : 11.378 M
+[Network D_A] Total number of parameters : 2.765 M
+[Network D_B] Total number of parameters : 2.765 M
+-----------------------------------------------
+create web directory ./checkpoints/ihc2he/web...
+learning rate 0.0002000 -> 0.0002000
+
+Job 20467307 has been completed!
